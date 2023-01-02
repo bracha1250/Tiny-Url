@@ -72,7 +72,7 @@ cd /usr/local/bin/
 redis-cli SET abc 1
 redis-cli GET abc
 redis-cli SETNX abc 1
-redis-cli SETNX abcd 1
+redis-cli `SETNX abcd 1`
 ```
 pom.xml
 ```
