@@ -13,7 +13,7 @@ public class CassandraConfig {
     @Bean("cassandraSession")
     public CqlSession getCassandraSession() throws URISyntaxException {
         return CqlSession.builder()
-                .addContactPoint(new InetSocketAddress("cassandra", 9042))
+                .addContactPoint(new InetSocketAddress("3.125.50.55", 9042))
                 .withKeyspace("tiny_keyspace")
                 .withLocalDatacenter("datacenter1")
                 .build();
